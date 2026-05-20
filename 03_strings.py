@@ -59,6 +59,4 @@ print ("1".isnumeric())# en este caso se muestra True ya que la cadena "1" conti
 print (nombre.lower())# el metodo lower() convierte todas las letras de la cadena a minusculas, en este caso se muestra "jhenmiller" ya que todas las letras de la cadena se han convertido a minusculas
 print (nombre.upper().isupper())# el metodo upper() convierte todas las letras de la cadena a mayusculas, y luego el metodo isupper() verifica si todas las letras de la cadena son mayusculas, devuelve True si todas las letras son mayusculas y False en caso contrario, en este caso se muestra True ya que despues de convertir la cadena a mayusculas, todas las letras son mayusculas y el metodo isupper() devuelve True
 
-
-
-
+print(f"mi nombre es {nombre} y tiene {len(nombre)} caracteres") # se utiliza una f-string para formatear la cadena de texto, se incluye la variable nombre y se utiliza la funcion len() para obtener el numero de caracteres de la cadena, en este caso se muestra "mi nombre es jhenmiller y tiene 11 caracteres" ya que la cadena "jhenmiller" tiene 11 caracteres
