@@ -36,3 +36,21 @@ my_tuple.insert(1,"python")# se puede insertar un elemento en una lista utilizan
 print(my_tuple)  
 del my_tuple 
 # print (my_tuple) # NameError: name 'my_tuple' is not defined, se puede eliminar una variable utilizando la palabra clave del, pero no se pueden modificar los elementos de la tupla, por lo tanto no se pueden contar los elementos de la tupla
+
+## practicas de la sesion de tuplas
+
+tuplas = ("jhenmiller", "samaniego", 31, 1.70, "jhenmiller")
+indice = tuplas.index(31)
+print(f"el indice de 31 es {indice}")
+indice = tuplas.index("jhenmiller")
+print(f"el indice de jhenmiller es {indice}")
+
+countar_elementos_tuplas = tuplas.count("jhenmiller")
+print(f"el total de elemnetos similares a jhenmiller es {countar_elementos_tuplas}")
+countar_elementos_tuplas = tuplas.count("samaniego")
+print(countar_elementos_tuplas)
+tuplas.count(31)
+print(tuplas.count(31))
+tuplas.count(1.70)
+print(tuplas.count(1.70))
+
