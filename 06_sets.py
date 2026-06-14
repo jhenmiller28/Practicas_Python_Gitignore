@@ -1,9 +1,11 @@
 # sets de datos
 # de base tiene a las listas, vevctor, array 
-# noadmite repetidos, no son ordenadas, 
+# no admite repetidos, no son ordenadas, 
 
+#creacion de sets
 my_set = set()
 my_other_set = {}
+
 
 print(type(my_set))
 print(type(my_other_set))
@@ -42,3 +44,21 @@ my_new_set = my_set.union(my_other_set) ## une los set de datos, pero no aepta l
 print(my_new_set.union(my_new_set).union(my_new_set).union({"CCNA","PostgreSQL"}))
 
 print(my_new_set.difference(my_set))# muestra los elemntos que son diferentes comparando otro set
+
+###### practicas de set
+set_practica = {}
+set_parc2 = set()
+
+print(set_practica)
+set_practica = {"miller"} # antes de agregar elementos al set, minimo debe tener un elemento
+set_practica.add("jhen")
+print(set_practica)
+set_practica.add("jhe")
+print(set_practica)
+set_parc2 = {"jhen", "millerrrr", 31, "japon" }
+print(set_parc2)
+nuevo_dato = input("ingresa dato: ")
+print(nuevo_dato)
+
+datos_cruzados = set_practica.intersection(set_parc2)
+print(datos_cruzados)
