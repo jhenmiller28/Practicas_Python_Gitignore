@@ -57,8 +57,16 @@ set_practica.add("jhe")
 print(set_practica)
 set_parc2 = {"jhen", "millerrrr", 31, "japon" }
 print(set_parc2)
-nuevo_dato = input("ingresa dato: ")
-print(nuevo_dato)
 
+## INGRESAR NUEVOS ELEMNETOS POR TECLADO Y AGREGARLOS A UN SET DE DATOS
+nuevo_dato = input("ingresa dato: ")
+print(f"el nuevo dato ingresado por teclado es: {nuevo_dato}")
+
+if nuevo_dato.isdigit():
+    set_practica.add(int(nuevo_dato)) # PARA AGREGAR NUKMEROS DEBEMOS APLICAR EL METODO INT
+else: 
+    set_practica.add(nuevo_dato)
+print(set_practica)
+print(f"se agrego un nuevo dato a set practica {nuevo_dato}")
 datos_cruzados = set_practica.intersection(set_parc2)
-print(datos_cruzados)
+print(f"los datos que son iguales en ambos set son: {datos_cruzados}")
