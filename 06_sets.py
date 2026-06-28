@@ -67,6 +67,6 @@ if nuevo_dato.isdigit():
 else: 
     set_practica.add(nuevo_dato)
 print(set_practica)
-print(f"se agrego un nuevo dato a set practica {nuevo_dato}")
+print(f"el nuevo dato agregado a set_practica es: {nuevo_dato}")
 datos_cruzados = set_practica.intersection(set_parc2)
 print(f"los datos que son iguales en ambos set son: {datos_cruzados}")
