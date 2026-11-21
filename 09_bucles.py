@@ -51,8 +51,15 @@ for element in my_set:
 
 print("----FOR EN DICT----")
 my_dict = {"nombre":"jhenmiller", "apellido":"merge","edad":31, 1:"pyhton"}
-for element in my_dict:
+for element in my_dict: ## inicio de bucle
     print (element)
+    if element == "edad":
+        continue
+    else: 
+        print("se ejecutura luego de continue")    
+else:   ## fin de bucle
+        print("El bucle terminó de recorrer todo el diccionario")
+print("eso es ya fuera de bucle")
 
 
 
